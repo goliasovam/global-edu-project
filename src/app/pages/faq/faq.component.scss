@@ -1,0 +1,24 @@
+.faq-item {
+  background-color: var(--color-bg-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-sm) var(--space-md);
+  transition: all var(--transition-fast);
+  gap: var(--space-sm);
+  margin-bottom: var(--space-md);
+
+  &__question {
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+    color: var(--color-text-main);
+    padding: var(--space-xs) 0;
+    list-style: none;
+  }
+
+  &__answer {
+    padding-top: var(--space-xs);
+    border-top: 1px solid var(--color-border);
+    margin-top: var(--space-xs);
+  }
+}

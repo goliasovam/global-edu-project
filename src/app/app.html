@@ -1,0 +1,38 @@
+<header class="app-header">
+  <div class="app-header__logo">GlobalEdu</div>
+
+  <div class="app-header__actions">
+    <label class="theme-switch">
+      <input type="checkbox" class="theme-switch__input">
+      <span class="theme-switch__icon"></span>
+    </label>
+    <div class="app-header__user">John Mackie</div>
+  </div>
+</header>
+
+<div class="app-layout">
+  <aside class="app-layout__sidebar">
+    <nav>
+      <ul class="app-layout__menu">
+        <li>
+          <a routerLink="/home" routerLinkActive="app-layout__menu-link--active" class="app-layout__menu-link">Home</a>
+        </li>
+        <li>
+          <a routerLink="/catalog" routerLinkActive="app-layout__menu-link--active" class="app-layout__menu-link">Catalog</a>
+        </li>
+        <li>
+          <a routerLink="/applications" routerLinkActive="app-layout__menu-link--active" class="app-layout__menu-link">Applications</a>
+        </li>
+        <li>
+          <a routerLink="/FAQ" routerLinkActive="app-layout__menu-link--active" class="app-layout__menu-link">FAQ</a>
+        </li>
+      </ul>
+    </nav>
+  </aside>
+
+  <main class="app-layout__main-content">
+    <router-outlet></router-outlet>
+  </main>
+</div>
+
+<footer class="app-footer">Copyright</footer>
